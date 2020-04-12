@@ -1,0 +1,128 @@
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif; }
+
+.wrapper {
+  display: flex;
+  height: 100vh; }
+
+.home-banner {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+
+.logo-block-mobile .logo {
+  max-width: 100px;
+  padding: 32px; }
+
+.info-block {
+  order: 2;
+  margin: 10px;
+  text-align: center; }
+
+.image-block {
+  width: 100%;
+  min-height: 30%;
+  background: url(images/hero-mobile.jpg) no-repeat center;
+  background-size: cover; }
+
+.logo-desktop {
+  display: none; }
+
+.description {
+  max-width: 450px;
+  color: #ce9797;
+  line-height: 1.5; }
+
+.title {
+  color: #413a3a;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 14px;
+  line-height: 1;
+  max-width: 350px;
+  margin: 50px auto; }
+  .title span {
+    color: #ce9797;
+    font-weight: 300;
+    display: block; }
+
+.input-form {
+  max-width: 300px;
+  margin: 50px auto 0 auto;
+  position: relative; }
+  .input-form input {
+    padding: 15px;
+    border-radius: 80px;
+    border: 1px solid #f96262;
+    width: 100%;
+    outline: 0; }
+  .input-form .arrow {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 47px;
+    border-radius: 100px;
+    transition: all 200ms ease-in;
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+    cursor: pointer; }
+  .input-form .arrow:hover,
+  .input-form .arrow:focus,
+  .input-form .arrow:active {
+    box-shadow: 13px 14px 93px -25px rgba(0, 0, 0, 0.75); }
+
+@media screen and (min-width: 600px) {
+  .logo-block-mobile {
+    display: none; }
+
+  .logo-desktop {
+    max-width: 150px;
+    display: block;
+    margin-bottom: 100px; }
+
+  .home-banner {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse; }
+
+  .info-block {
+    width: 60%;
+    margin: 50px;
+    margin-left: 150px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .image-block {
+    width: 40%;
+    min-height: 100vh;
+    background: url(images/hero-desktop.jpg) no-repeat center;
+    background-size: cover;
+    order: unset; }
+
+  .title {
+    margin-left: unset;
+    margin-right: unset;
+    font-size: 64px; }
+
+  .input-form {
+    max-width: 300px;
+    margin: unset;
+    margin-top: 50px; } }
+
+/*# sourceMappingURL=style.css.map */
