@@ -1,128 +1,59 @@
-.attribution {
-  font-size: 11px;
-  text-align: center; }
+/*
+Error: Invalid CSS after "    border-radius": expected ";", was ": 100px;    "
+        on line 85 of style.scss
 
-.attribution a {
-  color: #3e52a3; }
+80:     align-items: center;
+81:     justify-content: center;
+82:     width: 80px;
+83:     height: 47px;
+84:     border: 1px solid transparent
+85:     border-radius: 100px;    
+86:     background: linear-gradient( 135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100% );
+87:     cursor: pointer;   
+88:   }
+89: 
+90:   .arrow:hover,
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif; }
-
-.wrapper {
-  display: flex;
-  height: 100vh; }
-
-.home-banner {
-  display: flex;
-  width: 100%;
-  flex-direction: column; }
-
-.logo-block-mobile .logo {
-  max-width: 100px;
-  padding: 32px; }
-
-.info-block {
-  order: 2;
-  margin: 10px;
-  text-align: center; }
-
-.image-block {
-  width: 100%;
-  min-height: 30%;
-  background: url(images/hero-mobile.jpg) no-repeat center;
-  background-size: cover; }
-
-.logo-desktop {
-  display: none; }
-
-.description {
-  max-width: 450px;
-  color: #ce9797;
-  line-height: 1.5; }
-
-.title {
-  color: #413a3a;
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 14px;
-  line-height: 1;
-  max-width: 350px;
-  margin: 50px auto; }
-  .title span {
-    color: #ce9797;
-    font-weight: 300;
-    display: block; }
-
-.input-form {
-  max-width: 300px;
-  margin: 50px auto 0 auto;
-  position: relative; }
-  .input-form input {
-    padding: 15px;
-    border-radius: 80px;
-    border: 1px solid #f96262;
-    width: 100%;
-    outline: 0; }
-  .input-form .arrow {
-    position: absolute;
-    top: 0;
-    right: -35px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 47px;
-    border-radius: 100px;
-    transition: all 200ms ease-in;
-    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
-    cursor: pointer; }
-  .input-form .arrow:hover,
-  .input-form .arrow:focus,
-  .input-form .arrow:active {
-    box-shadow: 13px 14px 93px -25px rgba(0, 0, 0, 0.75); }
-
-@media screen and (min-width: 600px) {
-  .logo-block-mobile {
-    display: none; }
-
-  .logo-desktop {
-    max-width: 150px;
-    display: block;
-    margin-bottom: 100px; }
-
-  .home-banner {
-    display: flex;
-    width: 100%;
-    flex-direction: row-reverse; }
-
-  .info-block {
-    width: 60%;
-    margin: 50px;
-    margin-left: 150px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-
-  .image-block {
-    width: 40%;
-    min-height: 100vh;
-    background: url(images/hero-desktop.jpg) no-repeat center;
-    background-size: cover;
-    order: unset; }
-
-  .title {
-    margin-left: unset;
-    margin-right: unset;
-    font-size: 64px; }
-
-  .input-form {
-    max-width: 300px;
-    margin: unset;
-    margin-top: 50px; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:85
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    border-radius\": expected \";\", was \": 100px;    \"\A         on line 85 of style.scss\A \A 80:     align-items: center;\A 81:     justify-content: center;\A 82:     width: 80px;\A 83:     height: 47px;\A 84:     border: 1px solid transparent\A 85:     border-radius: 100px;    \A 86:     background: linear-gradient( 135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100% );\A 87:     cursor: pointer;   \A 88:   }\A 89: \A 90:   .arrow:hover,"; }
